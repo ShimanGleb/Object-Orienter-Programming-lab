@@ -11,10 +11,10 @@ namespace FOOPLab1
         {
             ATM Atm = new ATM();
             while (true)
-            {
+            {                
                 Console.WriteLine("Enter amount of money.");
                 int TokenCash = Convert.ToInt32(Console.ReadLine());
-                Atm.totalCash -= TokenCash;
+                Atm.GiveCash(TokenCash);
                 Console.WriteLine("The cash in amount of " + TokenCash + "$ was taken from your account.");
             }
         }
