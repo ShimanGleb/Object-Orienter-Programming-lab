@@ -18,20 +18,23 @@ namespace FOOPLab1
                 while (tryCash != amount)
                 {
                     for (int i = 0; i < notes.Keys.Count; i++)
-                    {
+                    {                        
                         tryCash += notes.Keys[i];
-                        if (tryCash > amount)
+                        if (tryCash > amount || notes[notes.Keys[i]]<0)
                         {
-                            tryCash -= notes.Keys[i];
+                            tryCash -= notes.Keys[i];                            
                         }
                         else
                         {
                             try { givenNotes.Add(notes.Keys[i], 0); }
                             catch { givenNotes[notes.Keys[i]]++; }
                         }
-                    }
+                    }                    
                 }
-
+                for (int i = 0; i < givenNotes.Keys.Count; i++)
+                {
+                    notes[notes.Keys[i]] -= givenNotes[notes.Keys[i]];
+                }
                 totalCash -= amount;
             }
             else return -1;
