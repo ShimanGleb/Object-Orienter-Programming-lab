@@ -17,6 +17,7 @@ namespace FOOPLab1
                 SortedList<int, int> givenNotes = new SortedList<int, int>();
                 while (tryCash != amount)
                 {
+                    bool added = false;
                     for (int i = 0; i < notes.Keys.Count; i++)
                     {                        
                         tryCash += notes.Keys[i];
@@ -26,10 +27,17 @@ namespace FOOPLab1
                         }
                         else
                         {
+                            added = true;
                             try { givenNotes.Add(notes.Keys[i], 0); }
                             catch { givenNotes[notes.Keys[i]]++; }
                         }
-                    }                    
+                    }
+                    if (added == false)
+                    {
+                        tryCash -= givenNotes[notes.Keys[notes.Keys.Count/2]];
+                        if (givenNotes[notes.Keys[notes.Keys.Count / 2]] > 0) givenNotes[notes.Keys[notes.Keys.Count / 2]]--;
+                        else givenNotes.Remove(notes.Keys.Count / 2);
+                    }
                 }
                 for (int i = 0; i < givenNotes.Keys.Count; i++)
                 {
@@ -37,7 +45,7 @@ namespace FOOPLab1
                 }
                 totalCash -= amount;
             }
-            else return -1;
+            else return 0;
             return amount;            
         }
         public ATM()
