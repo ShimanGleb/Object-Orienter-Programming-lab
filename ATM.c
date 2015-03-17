@@ -15,6 +15,7 @@ namespace FOOPLab1
             {
                 long tryCash = 0;
                 SortedList<int, int> givenNotes = new SortedList<int, int>();
+                int skips = 0;
                 while (tryCash != amount)
                 {
                     bool added = false;
@@ -27,16 +28,19 @@ namespace FOOPLab1
                         }
                         else
                         {
-                            added = true;
+                            added=true;
+                            skips = 0;
                             try { givenNotes.Add(notes.Keys[i], 0); }
                             catch { givenNotes[notes.Keys[i]]++; }
                         }
                     }
                     if (added == false)
                     {
+                        skips++;
                         tryCash -= givenNotes[notes.Keys[notes.Keys.Count/2]];
                         if (givenNotes[notes.Keys[notes.Keys.Count / 2]] > 0) givenNotes[notes.Keys[notes.Keys.Count / 2]]--;
                         else givenNotes.Remove(notes.Keys.Count / 2);
+                        if (skips == notes.Keys.Count) return 0;
                     }
                 }
                 for (int i = 0; i < givenNotes.Keys.Count; i++)
