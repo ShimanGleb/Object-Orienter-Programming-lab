@@ -10,12 +10,16 @@ namespace FOOPLab1
         static void Main(string[] args)
         {
             ATM Atm = new ATM();
+            const string fileName = "cash.txt";
+            MoneyLoader loader = new MoneyLoader();
+            loader.LoadNotes(Atm,fileName);
             while (true)
             {                
                 Console.WriteLine("Enter amount of money.");
                 int TokenCash = Convert.ToInt32(Console.ReadLine());
-                Atm.GiveCash(TokenCash);
-                Console.WriteLine("The cash in amount of " + TokenCash + "$ was taken from your account.");
+                MoneyOuter money = new MoneyOuter();
+                money = Atm.GiveCash(TokenCash);
+                money.GiveMoney();                
             }
         }
     }
