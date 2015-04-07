@@ -1,11 +1,11 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace FOOPLab1
 {
-    class ATM
+    class ATM:IATM
     {
         public SortedList<int, int> notes = new SortedList<int, int>();
         SortedList<int, int> givenNotes = new SortedList<int, int>();
@@ -54,6 +54,11 @@ namespace FOOPLab1
         public MoneyOuter GiveCash(long amount)
         {
             MoneyOuter message = new MoneyOuter();
+            if (amount <= 0)
+            {
+                message.errorType = "invalidAmountMessage";
+                return message;
+            }
             if (totalCash >= amount)
             {
                 long tryCash = 0;
@@ -63,19 +68,33 @@ namespace FOOPLab1
                 {
                     for (int i = 0; i < givenNotes.Keys.Count; i++)
                     {
-                        notes[givenNotes.Keys[i]] -= givenNotes[givenNotes.Keys[i]] + 1;
+                        if (notes[givenNotes.Keys[i]] == givenNotes[givenNotes.Keys[i]])
+                        {
+                            notes.Remove(givenNotes.Keys[i]);
+                        }
+                        else
+                        {
+                            if (givenNotes[givenNotes.Keys[i]] == 0)
+                            {
+                                notes[givenNotes.Keys[i]]--;
+                            }
+                            else
+                            {
+                                notes[givenNotes.Keys[i]] -= givenNotes[givenNotes.Keys[i]];
+                            }
+                        }
                     }
                     totalCash -= amount;
-                    message.amount = amount;
+                    message.givenNotes = givenNotes;                    
                     return message;
                 }
                 else
                 {
-                    message.errorType = "ATM doesn`t have suitable notes.";
+                    message.errorType = "notSuitableMessage";
                     return message;
                 }
             }
-            message.errorType = "ATM doesn`t have enough money.";
+            message.errorType = "notEnoughMessage";
             return message; 
         }        
     }    

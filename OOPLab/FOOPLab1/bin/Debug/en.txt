@@ -1,0 +1,8 @@
+$
+Enter amount of money.
+Error:
+Invalid amount of money.
+ATM doesn`t have enough money.
+ATM doesn`t have suitable notes.
+You have got the following note(s):
+ note(s) of value 
