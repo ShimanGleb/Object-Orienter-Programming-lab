@@ -1,2 +1,0 @@
-f:\Загрузки\Github\Object-Orienter-Programming-lab\OOPLab\FOOPLab1\obj\x86\Debug\FOOPLab1.exe
-f:\Загрузки\Github\Object-Orienter-Programming-lab\OOPLab\FOOPLab1\obj\x86\Debug\FOOPLab1.pdb

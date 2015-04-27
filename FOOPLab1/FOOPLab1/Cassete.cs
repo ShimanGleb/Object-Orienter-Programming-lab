@@ -5,8 +5,9 @@ using System.Text;
 
 namespace FOOPLab1
 {
-    interface IATM
+    class Cassete
     {
-        MoneyOuter GiveCash(long amount);
+        public int noteValue = 0;
+        public int noteCount = 0;
     }
 }

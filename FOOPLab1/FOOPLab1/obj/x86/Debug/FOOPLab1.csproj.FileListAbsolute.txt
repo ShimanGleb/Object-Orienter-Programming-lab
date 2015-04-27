@@ -7,5 +7,4 @@ F:\Загрузки\FOOPLab1\FOOPLab1\obj\x86\Debug\FOOPLab1.pdb
 F:\Загрузки\FOOPLab1\FOOPLab1\bin\Debug\FOOPLab1.exe
 F:\Загрузки\FOOPLab1\FOOPLab1\bin\Debug\FOOPLab1.pdb
 f:\Загрузки\FOOPLab1\FOOPLab1\obj\x86\Debug\FOOPLab1.csprojResolveAssemblyReference.cache
-f:\Загрузки\Github\Object-Orienter-Programming-lab\OOPLab\FOOPLab1\obj\x86\Debug\FOOPLab1.exe
-f:\Загрузки\Github\Object-Orienter-Programming-lab\OOPLab\FOOPLab1\obj\x86\Debug\FOOPLab1.pdb
+f:\Загрузки\FOOPLab1\FOOPLab1\bin\Debug\FOOPLab1.exe.config

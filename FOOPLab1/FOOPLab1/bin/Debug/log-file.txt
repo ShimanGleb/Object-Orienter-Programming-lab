@@ -1,0 +1,64 @@
+2015-04-22 08:47:29,126 [9] INFO  - Starting process.
+2015-04-22 08:47:30,069 [9] INFO  - Process start: success.
+2015-04-22 08:47:30,604 [9] INFO  - Start giving money.
+2015-04-22 08:47:30,626 [9] INFO  - Money give: success.
+2015-04-22 08:47:30,627 [9] INFO  - 20 => 2 10;
+2015-04-22 08:47:31,674 [9] INFO  - Start giving money.
+2015-04-22 08:47:31,756 [9] INFO  - Error:ATM doesn`t have suitable notes.
+2015-04-22 08:47:32,598 [9] INFO  - Start giving money.
+2015-04-22 08:47:32,606 [9] INFO  - Error:Invalid amount of money.
+2015-04-22 08:50:39,696 [10] INFO  - Starting process.
+2015-04-22 08:50:41,043 [10] INFO  - Process start: success.
+2015-04-22 08:50:42,591 [10] INFO  - Entered sum: 20
+2015-04-22 08:50:42,592 [10] INFO  - Start giving money.
+2015-04-22 08:50:42,616 [10] INFO  - Money give: success.
+2015-04-22 08:50:42,617 [10] INFO  - 20 => 2 10;
+2015-04-22 08:50:43,971 [10] INFO  - Entered sum: 19
+2015-04-22 08:50:43,971 [10] INFO  - Start giving money.
+2015-04-22 08:50:44,057 [10] INFO  - Error:ATM doesn`t have suitable notes.
+2015-04-22 08:50:46,617 [10] INFO  - Entered sum: -5
+2015-04-22 08:50:46,617 [10] INFO  - Start giving money.
+2015-04-22 08:50:46,624 [10] INFO  - Error:Invalid amount of money.
+2015-04-22 08:52:26,174 [9] INFO  - Starting process.
+2015-04-22 08:52:27,396 [9] INFO  - Process start: success.
+2015-04-22 08:52:28,411 [9] INFO  - Entered sum: 20
+2015-04-22 08:52:28,412 [9] INFO  - Start giving money.
+2015-04-22 08:52:28,436 [9] INFO  - Money give: success.
+2015-04-22 08:52:28,437 [9] INFO  - 20 => 2 10;
+2015-04-22 08:52:29,542 [9] INFO  - Entered sum: 19
+2015-04-22 08:52:29,542 [9] INFO  - Start giving money.
+2015-04-22 08:52:29,622 [9] INFO  - Error:ATM doesn`t have suitable notes.
+2015-04-22 08:52:30,478 [9] INFO  - Entered sum: -1
+2015-04-22 08:52:30,478 [9] INFO  - Start giving money.
+2015-04-22 08:52:30,485 [9] INFO  - Error:Invalid amount of money.
+2015-04-22 08:52:32,015 [9] INFO  - Entered sum: a
+2015-04-22 09:00:24,907 [7] INFO  - Starting process.
+2015-04-22 09:01:41,018 [9] INFO  - Starting process.
+2015-04-22 09:01:42,987 [9] INFO  - Process start: success.
+2015-04-22 09:01:43,996 [9] INFO  - Entered sum: 20
+2015-04-22 09:01:43,997 [9] INFO  - Start giving money.
+2015-04-22 09:01:44,020 [9] INFO  - Money give: success.
+2015-04-22 09:01:44,021 [9] INFO  - 20 => 2 10;
+2015-04-22 09:01:45,018 [9] INFO  - Entered sum: 19
+2015-04-22 09:01:45,018 [9] INFO  - Start giving money.
+2015-04-22 09:01:45,102 [9] INFO  - Error:ATM doesn`t have suitable notes.
+2015-04-22 09:01:46,077 [9] INFO  - Entered sum: -1
+2015-04-22 09:01:46,078 [9] INFO  - Start giving money.
+2015-04-22 09:01:46,085 [9] INFO  - Error:Invalid amount of money.
+2015-04-22 09:39:37,188 [10] INFO  - Starting process.
+2015-04-22 09:39:43,746 [9] INFO  - Starting process.
+2015-04-22 09:39:44,617 [9] INFO  - Process start: success.
+2015-04-22 09:39:45,299 [9] INFO  - Entered sum: 20
+2015-04-22 09:39:45,300 [9] INFO  - Start giving money.
+2015-04-22 09:39:45,321 [9] INFO  - Money give: success.
+2015-04-22 09:39:45,322 [9] INFO  - 20 => 2 10;
+2015-04-22 09:39:46,356 [9] INFO  - Entered sum: 19
+2015-04-22 09:39:46,356 [9] INFO  - Start giving money.
+2015-04-22 09:39:46,436 [9] INFO  - Error:ATM doesn`t have suitable notes.
+2015-04-22 09:39:48,194 [9] INFO  - Entered sum: -2
+2015-04-22 09:39:48,194 [9] INFO  - Start giving money.
+2015-04-22 09:39:48,203 [9] INFO  - Error:Invalid amount of money.
+2015-04-22 09:39:50,255 [9] INFO  - Entered sum: a
+2015-04-22 09:39:50,265 [9] INFO  - Error: invalid sum value.
+2015-04-22 09:39:50,265 [9] INFO  - Start giving money.
+2015-04-22 09:39:50,272 [9] INFO  - Error:Invalid amount of money.
